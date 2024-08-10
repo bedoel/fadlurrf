@@ -14,9 +14,6 @@ module.exports = {
       },
       screens:{
         '2xl': '1320px',
-      },
-      backgroundImage: {
-        'blog1': "url('/src/img/blog1.jpg')",
       }
     },
   },
