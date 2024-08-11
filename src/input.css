@@ -4,7 +4,9 @@
 
 body{
     font-family: 'Inter', sans-serif;
-    background-color: #ddd0c8;
+    /* background-image: linear-gradient(#ddd0c8, black,#885643); */
+    background-color: #b1a49c;
+    /* background-color: #3d2a21; */
 }
 
 .h-200{
