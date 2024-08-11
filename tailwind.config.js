@@ -8,12 +8,18 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#1c1917',
-        secondary: '#64748b',
-        dark: '#0f172a',
+        primary: '#323232',
+        secondary: '#885643',
+        dark: '#0c0b0b',
+        bwhite: '#e8e9eb',
+        bwhite2: '#eee4cd',
+        fcolor: '#2e272a',
       },
       screens:{
         '2xl': '1320px',
+      },
+      maxHeight: {
+        '128': '32rem',
       }
     },
   },
