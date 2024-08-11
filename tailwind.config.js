@@ -13,6 +13,7 @@ module.exports = {
         dark: '#6EACDA',
         dark2: '#153448',
         dark3: '#010c16',
+        dark5: '#06243f',
         dark4: '#093255',
         porto: '#305874',
         bwhite: '#e8e9eb',
