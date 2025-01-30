@@ -7,251 +7,191 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Portfolio Fadlur Rahman Fa'iq</title>
   </head>
   <body>
-    <!-- header start -->
-    <header
-      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
-    >
-      <div class="container">
-        <div class="flex items-center justify-between relative">
-          <div class="px-4">
-            <a href="#home" class="font-bold text-2xl text-primary block py-6"
-              >FRF</a
-            >
-          </div>
-          <div class="flex items-center px-4">
-            <button
-              id="hamburger"
-              name="hamburger"
-              type="button"
-              class="block absolute right-4 lg:hidden"
-            >
-              <span
-                class="menu-line transition duration-300 ease-in-out origin-top-left"
-              ></span>
-              <span
-                class="menu-line transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="menu-line transition duration-300 ease-in-out origin-bottom-left"
-              ></span>
-            </button>
-
-            <nav
-              id="nav-menu"
-              class="hidden absolute py-5 bg-dark5 shadow-lg rounded-md max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
-            >
-              <ul class="block lg:flex">
-                <li class="group">
-                  <a
-                    href="#home"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                    >Beranda</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#about"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                    >Tentang Saya</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#portfolio"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#blog"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                    >Blog</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#kontak"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                    >Kontak</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- header end -->
-    <!-- Hero Sec Start -->
-    <section id="home" class="pt-36 lg:pt-24 h-screen">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full relative self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl">
-              Hallo, nama saya
-              <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl"
-                >Fadlur Rahman Fa'iq</span
+    <div class="relative bg-custom bg-cover bg-center h-[140vh] md:h-screen">
+      <div class="absolute inset-0 bg-black/80"></div>
+      <!-- header start -->
+      <header
+        class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+      >
+        <div class="container">
+          <div class="flex items-center justify-between relative">
+            <div class="px-4">
+              <a href="" class="font-bold text-2xl text-primary block py-6"
+                >FRF</a
               >
-            </h1>
-            <h2 class="font-semibold text-secondary text-lg mb-5 lg:text-2xl">
-              Mahasiswa
-            </h2>
-            <p
-              class="font-semibold text-secondary text-justify mb-10 leading-relaxed lg:text-lg lg:text-left"
-            >
-              Saya mahasiswa dengan jurusan Teknologi Informasi, saya memiliki
-              minat yang tinggi pada desain dan pemrograman, khususnya dalam
-              pengembangan website.
-            </p>
-
-            <a
-              href="#kontak"
-              class="text-base font-semibold text-dark2 bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-              >Hubungi Saya</a
-            >
-
-            <span class="hidden absolute bottom-48 -right-72 -z-10 lg:block">
-              <svg
-                width="300"
-                height="300"
-                viewBox="0 0 200 200"
-                xmlns="http://www.w3.org/2000/svg"
+            </div>
+            <div class="flex items-center px-4">
+              <button
+                id="hamburger"
+                name="hamburger"
+                type="button"
+                class="block absolute right-4 lg:hidden"
               >
-                <path
-                  fill="#DFD0B8"
-                  d="M40.6,-54.8C44.7,-52.9,34.7,-30.5,26.9,-17.5C19.1,-4.5,13.5,-1,13.7,6.3C13.9,13.6,19.9,24.6,18.6,29.5C17.2,34.4,8.6,33.3,-0.1,33.5C-8.9,33.6,-17.7,35.1,-26.7,32.7C-35.8,30.2,-45,23.9,-43.1,17C-41.2,10.1,-28.2,2.6,-25.5,-9C-22.7,-20.6,-30.3,-36.3,-27.7,-38.7C-25.2,-41.1,-12.6,-30.3,2.8,-34.2C18.2,-38.1,36.5,-56.7,40.6,-54.8Z"
-                  transform="translate(100 100)"
-                />
-              </svg>
-            </span>
+                <span
+                  class="menu-line transition duration-300 ease-in-out origin-top-left"
+                ></span>
+                <span
+                  class="menu-line transition duration-300 ease-in-out"
+                ></span>
+                <span
+                  class="menu-line transition duration-300 ease-in-out origin-bottom-left"
+                ></span>
+              </button>
 
-            <span class="hidden absolute -bottom-56 -right-64 -z-10 lg:block">
-              <svg
-                width="300"
-                height="300"
-                viewBox="0 0 200 200"
-                xmlns="http://www.w3.org/2000/svg"
+              <nav
+                id="nav-menu"
+                class="hidden absolute py-5 bg-dark5 shadow-lg rounded-md max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
               >
-                <path
-                  fill="#DFD0B8"
-                  d="M25.1,-45C34.6,-38,45.6,-35.4,53.3,-28.6C60.9,-21.8,65.1,-10.9,60.7,-2.6C56.2,5.8,43.2,11.6,39,24.4C34.9,37.2,39.6,57.1,34.6,70.6C29.6,84.1,14.8,91.3,-0.8,92.6C-16.3,93.9,-32.7,89.4,-43.1,79C-53.6,68.6,-58.1,52.4,-64.9,38.3C-71.7,24.1,-80.7,12.1,-82.9,-1.3C-85.1,-14.6,-80.4,-29.2,-70.2,-37.4C-60,-45.6,-44.2,-47.4,-31.6,-52.5C-18.9,-57.7,-9.5,-66.1,-0.8,-64.7C7.8,-63.3,15.7,-52,25.1,-45Z"
-                  transform="translate(100 100)"
-                />
-              </svg>
-            </span>
-
-            <span class="absolute bottom-80 left-20 -z-10 lg:hidden">
-              <svg
-                width="200"
-                height="200"
-                viewBox="0 0 200 200"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill="#DFD0B8"
-                  d="M25.2,-32.9C36.4,-31.9,52,-31.4,64.4,-23.7C76.8,-16,86.1,-1.1,83.6,11.6C81.1,24.3,66.7,34.8,52.6,38.6C38.5,42.4,24.6,39.4,13.9,38.7C3.1,37.9,-4.4,39.3,-13.5,39.6C-22.7,39.9,-33.3,39,-38.7,33.3C-44.1,27.6,-44.2,17,-50.5,4.4C-56.8,-8.2,-69.4,-22.8,-64.7,-28.1C-60.1,-33.4,-38.2,-29.5,-24.6,-29.4C-10.9,-29.3,-5.5,-33,0.8,-34.2C7,-35.4,13.9,-33.9,25.2,-32.9Z"
-                  transform="translate(100 100)"
-                />
-              </svg>
-            </span>
-            <span class="absolute -bottom-28 -right-0 -z-10 lg:hidden">
-              <svg
-                width="200"
-                height="200"
-                viewBox="0 0 200 200"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill="#DFD0B8"
-                  d="M11.8,-14.8C20.2,-15.6,35.3,-22.3,37.7,-20.9C40.1,-19.4,29.8,-9.7,34.7,2.8C39.6,15.4,59.7,30.7,57.6,32.7C55.5,34.7,31.2,23.3,17.9,26.1C4.6,28.8,2.3,45.6,-5,54.3C-12.4,63,-24.7,63.6,-28.7,55.6C-32.7,47.5,-28.4,30.7,-24.4,20C-20.3,9.2,-16.7,4.6,-18.3,-1C-20,-6.6,-27,-13.1,-31.7,-25C-36.4,-36.9,-38.8,-54.1,-33.1,-54.8C-27.4,-55.6,-13.7,-39.9,-6,-29.5C1.7,-19.1,3.4,-14,11.8,-14.8Z"
-                  transform="translate(100 100)"
-                />
-              </svg>
-            </span>
-          </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:mt-9 lg:right-0">
-              <img
-                src="src/img/fadlur1.png"
-                alt="Fadlur Rahman Fa'iq"
-                class="max-w-xs mx-auto md:max-w-sm lg:max-w-md"
-              />
-              <span class="hidden absolute -top-20 -right-7 -z-10 lg:block">
-                <svg
-                  width="250"
-                  height="250"
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="#DFD0B8"
-                    d="M34.2,-42.7C43.2,-40.5,48.7,-29,58.1,-15.3C67.4,-1.6,80.6,14.5,75.6,22.9C70.5,31.2,47.1,32,31.5,35.8C15.9,39.7,7.9,46.6,-2.6,50.1C-13.1,53.7,-26.2,53.9,-30.6,46.4C-35,39,-30.8,23.8,-30.2,12.8C-29.6,1.8,-32.8,-4.9,-34.6,-14.9C-36.4,-24.9,-36.9,-38.2,-30.9,-41.4C-24.9,-44.7,-12.5,-37.9,0.1,-38C12.6,-38.1,25.1,-45,34.2,-42.7Z"
-                    transform="translate(100 100)"
-                  />
-                </svg>
-              </span>
-              <span class="hidden absolute -bottom-36 right-0 -z-10 lg:block">
-                <svg
-                  width="300"
-                  height="300"
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="#DFD0B8"
-                    d="M45.3,-42.5C53.1,-26.4,49.8,-7.9,41,0.8C32.2,9.6,17.9,8.5,8,11.1C-1.8,13.7,-7.3,20,-21.9,22C-36.5,23.9,-60.3,21.6,-61.5,14.6C-62.7,7.6,-41.2,-4,-27.1,-21.5C-13.1,-39,-6.6,-62.3,6.1,-67.2C18.8,-72.1,37.6,-58.5,45.3,-42.5Z"
-                    transform="translate(100 100)"
-                  />
-                </svg>
-              </span>
+                <ul class="block lg:flex">
+                  <li class="group">
+                    <a
+                      href="#home"
+                      class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition-transform transform group-hover:scale-105 md:group-hover:scale-110"
+                      >Beranda</a
+                    >
+                  </li>
+                  <li class="group">
+                    <a
+                      href="#about"
+                      class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition-transform transform group-hover:scale-105 md:group-hover:scale-110"
+                      >Tentang Saya</a
+                    >
+                  </li>
+                  <li class="group">
+                    <a
+                      href="#portfolio"
+                      class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition-transform transform group-hover:scale-105 md:group-hover:scale-110"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="group">
+                    <a
+                      href="#blog"
+                      class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition-transform transform group-hover:scale-105 md:group-hover:scale-110"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="group">
+                    <a
+                      href="#kontak"
+                      class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition-transform transform group-hover:scale-105 md:group-hover:scale-110"
+                      >Kontak</a
+                    >
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Hero Sec End -->
+      </header>
+      <!-- header end -->
+      <!-- Hero Sec Start -->
+      <section id="home" class="pt-36 lg:pt-24 h-screen">
+        <div class="container">
+          <div class="flex flex-wrap">
+            <div
+              class="w-full relative self-center px-4 lg:w-1/2"
+              data-aos="zoom-in-right"
+              data-aos-delay="100"
+            >
+              <h1 class="text-base font-semibold text-primary md:text-xl">
+                Hallo, nama saya
+                <span
+                  class="block font-poppins font-bold text-dark text-4xl mt-1 lg:text-5xl"
+                  >Fadlur Rahman Fa'iq</span
+                >
+              </h1>
+              <h2 class="font-semibold text-primary text-lg mb-5 lg:text-2xl">
+                Mahasiswa
+              </h2>
+              <p
+                class="font-semibold text-secondary text-justify mb-10 leading-relaxed lg:text-lg lg:text-left"
+              >
+                Saya mahasiswa dengan jurusan Teknologi Informasi, saya memiliki
+                minat yang tinggi pada desain dan pemrograman, khususnya dalam
+                pengembangan website.
+              </p>
+
+              <a
+                href="#kontak"
+                class="text-base font-semibold text-black bg-dark py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                >Hubungi Saya</a
+              >
+            </div>
+            <div
+              class="w-full self-end px-4 lg:w-1/2"
+              data-aos="zoom-in-left"
+              data-aos-delay="100"
+            >
+              <div class="relative mt-10 lg:mt-9 lg:right-0">
+                <img
+                  src="src/img/fadlur1.png"
+                  alt="Fadlur Rahman Fa'iq"
+                  class="max-w-xs mx-auto md:max-w-sm lg:max-w-md"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Sec End -->
+    </div>
 
     <!-- About start -->
-    <section id="about" class="pt-56 md:pt-20">
-      <div class="relative w-full h-200 overflow-hidden md:h-screen">
-        <div
-          class="absolute inset-0 bg-no-repeat bg-cover bg-fixed parallax-bg"
-          style="background-image: url('src/img/paralax.jpg')"
-        ></div>
+    <section id="about" class="pt-16">
+      <div class="relative w-full h-200 overflow-hidden md:h-[80vh]">
         <div class="absolute inset-0 bg-black bg-opacity-50">
           <div class="container flex flex-wrap">
             <div class="w-full mt-10 px-4 mb-10 lg:w-1/2">
-              <h4 class="font-bold uppercase text-bwhite text-lg mb-3">
+              <h4
+                class="font-bold uppercase text-dark text-lg mb-3"
+                data-aos="fade-down"
+                data-aos-delay="100"
+              >
                 Tentang Saya
               </h4>
               <h2
                 class="font-bold text-bwhite text-3xl mb-5 max-w-md lg:text-4xl"
+                data-aos="fade-right"
+                data-aos-delay="100"
               >
-                Halo! Saya Fadlur Rahman Fa'iq,
+                Halo! Saya <span class="text-dark">Fadlur Rahman Fa'iq</span>,
               </h2>
-              <p
-                class="font-medium text-base text-bwhite2 text-justify max-w-xl lg:text-lg"
-              >
-                mahasiswa Teknologi Informasi dengan fokus pada pengembangan
-                website. Saya telah terlibat dalam beberapa proyek sederhana dan
-                terus mencari kesempatan untuk meningkatkan keterampilan saya
-                dalam pemrograman web.
-              </p>
-              <p
-                class="font-medium text-base text-bwhite2 text-justify max-w-xl mt-3 lg:text-lg"
-              >
-                Melalui website ini, saya ingin membagikan hasil proyek saya dan
-                menunjukkan kemajuan saya. Jika anda memiliki saran atau proyek
-                menarik, saya sangat terbuka untuk diskusi dan kolaborasi.
-                Terima kasih telah mengunjungi halaman saya.
-              </p>
+              <div data-aos="fade-right" data-aos-delay="100">
+                <p
+                  class="font-medium text-base text-bwhite2 text-justify max-w-xl lg:text-lg"
+                >
+                  mahasiswa Teknologi Informasi dengan fokus pada pengembangan
+                  website. Saya telah terlibat dalam beberapa proyek sederhana
+                  dan terus mencari kesempatan untuk meningkatkan keterampilan
+                  saya dalam pemrograman web.
+                </p>
+                <p
+                  class="font-medium text-base text-bwhite2 text-justify max-w-xl mt-3 lg:text-lg"
+                >
+                  Melalui website ini, saya ingin membagikan hasil proyek saya
+                  dan menunjukkan kemajuan saya. Jika anda memiliki saran atau
+                  proyek menarik, saya sangat terbuka untuk diskusi dan
+                  kolaborasi. Terima kasih telah mengunjungi halaman saya.
+                </p>
+              </div>
             </div>
 
-            <div class="w-full px-4 lg:w-1/2">
+            <div
+              class="w-full px-4 lg:w-1/2"
+              data-aos="fade-left"
+              data-aos-delay="600"
+            >
               <h3
                 class="font-semibold text-bwhite text-2xl mb-4 lg:text-3xl lg:pt-24"
               >
@@ -269,8 +209,10 @@
                 <!-- Instagram -->
                 <a
                   href="http://instagram.com/fadlur.rf"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
                   target="_blank"
-                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-primary text-primary hover:border-dark hover:bg-dark hover:text-black"
                 >
                   <svg
                     role="img"
@@ -289,8 +231,10 @@
                 <!-- Linkedin -->
                 <a
                   href="https://www.linkedin.com/in/fadlurrf/"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
                   target="_blank"
-                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-primary text-primary hover:border-dark hover:bg-dark hover:text-black"
                 >
                   <svg
                     role="img"
@@ -314,158 +258,231 @@
     <!-- About end -->
 
     <!-- portfolio start -->
-    <section id="portfolio" class="pt-28 pb-16 bg-porto">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4">Proyek Terbaru</h2>
-            <p class="font-medium text-md text-secondary">
-              Berikut ini adalah beberapa proyek yang telah saya kerjakan.
-              Setiap proyek merupakan bukti kemajuan dan keterampilan yang telah
-              saya kembangkan dalam pengembangan website.
-            </p>
-          </div>
-        </div>
-        <div
-          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
-        >
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-md overflow-hidden bg-dark2">
-              <img
-                src="src/img/listrik.png"
-                alt="Pembayaran Listrik"
-                width="w-full"
-              />
+    <section id="portfolio" class="pt-16">
+      <div class="relative flex flex-col">
+        <!-- Section dengan gambar parallax -->
+        <div class="bg-parallax bg-fixed bg-cover bg-center">
+          <div
+            class="w-full h-full flex items-center justify-center pt-20 bg-black bg-opacity-80"
+          >
+            <div class="container">
+              <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                  <div data-aos="fade-down" data-aos-delay="100">
+                    <h4 class="font-semibold text-lg text-primary mb-2">
+                      Portfolio
+                    </h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4">
+                      Proyek Terbaru
+                    </h2>
+                  </div>
+                  <p
+                    class="font-medium text-md text-secondary"
+                    data-aos="zoom-out"
+                    data-aos-delay="100"
+                  >
+                    Berikut ini adalah beberapa proyek yang telah saya kerjakan.
+                    Setiap proyek merupakan bukti kemajuan dan keterampilan yang
+                    telah saya kembangkan dalam pengembangan website.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+              >
+                <div
+                  class="mb-12 p-4 md:w-1/2"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <div
+                    class="relative rounded-lg shadow-md overflow-hidden bg-dark2 group"
+                  >
+                    <!-- Gambar dengan Gradient -->
+                    <div class="relative overflow-hidden">
+                      <img
+                        src="src/img/listrik.png"
+                        alt="Pembayaran Listrik"
+                        class="w-full transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                      />
+                      <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/100 to-transparent"
+                      ></div>
+                    </div>
 
-              <div class="py-6 px-4">
-                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
-                  Website Pembayaran Listrik
-                </h3>
-                <p class="font-medium text-base text-secondary mb-2">
-                  Proyek ini dibuat dengan menggunakan framework Codeigniter 3.
-                </p>
-                <a
-                  href="https://github.com/bedoel/pembayaran-listrik"
-                  target="_blank"
-                  class="w-28 font-medium text-sm flex text-dark3 bg-primary py-2 px-4 rounded-lg hover:opacity-80"
-                  ><svg
-                    role="img"
-                    width="20"
-                    class="fill-current mr-1"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>GitHub</title>
-                    <path
-                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                    />
-                  </svg>
-                  Github</a
+                    <div class="pb-6 px-4">
+                      <h3 class="font-semibold text-xl text-dark mb-3">
+                        Website Pembayaran Listrik
+                      </h3>
+                      <p class="font-medium text-base text-secondary mb-2">
+                        Proyek ini dibuat dengan menggunakan framework
+                        Codeigniter 3.
+                      </p>
+                      <a
+                        href="https://github.com/bedoel/pembayaran-listrik"
+                        target="_blank"
+                        class="w-28 font-medium text-sm flex text-dark3 bg-primary py-2 px-4 rounded-lg hover:opacity-80"
+                        ><svg
+                          role="img"
+                          width="20"
+                          class="fill-current mr-1"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>GitHub</title>
+                          <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                          />
+                        </svg>
+                        Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="mb-12 p-4 md:w-1/2"
+                  data-aos="zoom-in"
+                  data-aos-delay="500"
                 >
-              </div>
-            </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-md overflow-hidden bg-dark2">
-              <img src="src/img/tastas.png" alt="E-Commerce" width="w-full" />
+                  <div
+                    class="relative rounded-lg shadow-md overflow-hidden bg-dark2 group"
+                  >
+                    <div class="relative overflow-hidden">
+                      <img
+                        src="src/img/tastas.png"
+                        alt="E-Commerce"
+                        class="w-full transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                      />
+                      <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/100 to-transparent"
+                      ></div>
+                    </div>
 
-              <div class="py-6 px-4">
-                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
-                  Website Penjualan Tas
-                </h3>
-                <p class="font-medium text-base text-secondary mb-2">
-                  Proyek ini dibuat dengan menggunakan framework Codeigniter 3.
-                </p>
-                <a
-                  href="https://github.com/bedoel/tokotas-webpro"
-                  target="_blank"
-                  class="w-28 font-medium text-sm flex text-dark3 bg-primary py-2 px-4 rounded-lg hover:opacity-80"
-                  ><svg
-                    role="img"
-                    width="20"
-                    class="fill-current mr-1"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>GitHub</title>
-                    <path
-                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                    />
-                  </svg>
-                  Github</a
+                    <div class="pb-6 px-4">
+                      <h3 class="font-semibold text-xl text-dark mb-3">
+                        Website Penjualan Tas
+                      </h3>
+                      <p class="font-medium text-base text-secondary mb-2">
+                        Proyek ini dibuat dengan menggunakan framework
+                        Codeigniter 3.
+                      </p>
+                      <a
+                        href="https://github.com/bedoel/tokotas-webpro"
+                        target="_blank"
+                        class="w-28 font-medium text-sm flex text-dark3 bg-primary py-2 px-4 rounded-lg hover:opacity-80"
+                        ><svg
+                          role="img"
+                          width="20"
+                          class="fill-current mr-1"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>GitHub</title>
+                          <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                          />
+                        </svg>
+                        Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="mb-12 p-4 md:w-1/2"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
                 >
-              </div>
-            </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-md overflow-hidden bg-dark2">
-              <img
-                src="src/img/tokotas.png"
-                alt="Website Toko Tas"
-                width="w-full"
-              />
-              <div class="py-6 px-4">
-                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
-                  Website Toko Tas
-                </h3>
-                <p class="font-medium text-base text-secondary mb-2">
-                  Proyek ini dibuat dengan menggunakan bahasa pemrograman PHP.
-                </p>
-                <a
-                  href="https://github.com/bedoel/tokotas-rpl"
-                  target="_blank"
-                  class="w-28 font-medium text-sm flex text-dark3 bg-primary py-2 px-4 rounded-lg hover:opacity-80"
-                  ><svg
-                    role="img"
-                    width="20"
-                    class="fill-current mr-1"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="relative rounded-lg shadow-md overflow-hidden bg-dark2 group"
                   >
-                    <title>GitHub</title>
-                    <path
-                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                    />
-                  </svg>
-                  Github</a
+                    <div class="relative overflow-hidden">
+                      <img
+                        src="src/img/tokotas.png"
+                        alt="Website Toko Tas"
+                        class="w-full transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                      />
+                      <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/100 to-transparent"
+                      ></div>
+                    </div>
+
+                    <div class="pb-6 px-4">
+                      <h3 class="font-semibold text-xl text-dark mb-3">
+                        Website Toko Tas
+                      </h3>
+                      <p class="font-medium text-base text-secondary mb-2">
+                        Proyek ini dibuat dengan menggunakan bahasa pemrograman
+                        PHP.
+                      </p>
+                      <a
+                        href="https://github.com/bedoel/tokotas-rpl"
+                        target="_blank"
+                        class="w-28 font-medium text-sm flex text-dark3 bg-primary py-2 px-4 rounded-lg hover:opacity-80"
+                        ><svg
+                          role="img"
+                          width="20"
+                          class="fill-current mr-1"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>GitHub</title>
+                          <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                          />
+                        </svg>
+                        Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="mb-12 p-4 md:w-1/2"
+                  data-aos="zoom-in"
+                  data-aos-delay="500"
                 >
-              </div>
-            </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-md overflow-hidden bg-dark2">
-              <img
-                src="src/img/kue.png"
-                alt="Website Toko Kue"
-                width="w-full"
-              />
-              <div class="py-6 px-4">
-                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
-                  Website Toko Kue
-                </h3>
-                <p class="font-medium text-base text-secondary mb-2">
-                  Proyek ini dibuat dengan menggunakan PHP namun tidak
-                  terkoneksi dengan database.
-                </p>
-                <a
-                  href="https://github.com/bedoel/tokokue"
-                  target="_blank"
-                  class="w-28 font-medium text-sm flex text-dark3 bg-primary py-2 px-4 rounded-lg hover:opacity-80"
-                  ><svg
-                    role="img"
-                    width="20"
-                    class="fill-current mr-1"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="relative rounded-lg shadow-md overflow-hidden bg-dark2 group"
                   >
-                    <title>GitHub</title>
-                    <path
-                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                    />
-                  </svg>
-                  Github</a
-                >
+                    <div class="relative overflow-hidden">
+                      <img
+                        src="src/img/kue.png"
+                        alt="Website Toko Kue"
+                        class="w-full transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                      />
+                      <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/100 to-transparent"
+                      ></div>
+                    </div>
+
+                    <div class="pb-6 px-4">
+                      <h3 class="font-semibold text-xl text-dark mb-3">
+                        Website Toko Kue
+                      </h3>
+                      <p class="font-medium text-base text-secondary mb-2">
+                        Proyek ini dibuat dengan menggunakan PHP namun tidak
+                        terkoneksi dengan database.
+                      </p>
+                      <a
+                        href="https://github.com/bedoel/tokokue"
+                        target="_blank"
+                        class="w-28 font-medium text-sm flex text-dark3 bg-primary py-2 px-4 rounded-lg hover:opacity-80"
+                        ><svg
+                          role="img"
+                          width="20"
+                          class="fill-current mr-1"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>GitHub</title>
+                          <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                          />
+                        </svg>
+                        Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -474,33 +491,64 @@
     </section>
     <!-- portfolio end -->
 
-    <!-- blog start -->
-    <section id="blog" class="pt-28 pb-16 bg-slate-400">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-8">
-            <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-            <h2 class="font-bold text-dark2 text-3xl">Tulisan Terkini</h2>
-          </div>
-
-          <div class="flex flex-wrap justify-center">
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-              <div class="bg-dark2 rounded-xl shadow-lg overflow-hidden mb-10">
-                <img src="src/img/blog1.jpg" alt="" class="w-full" />
-                <div class="py-8 px-6">
-                  <h3>
-                    <a
-                      href="blog.html"
-                      class="block mb-3 font-semibold text-xl text-dark hover:text-primary"
-                      >Perangkat lunak yang digunakan untuk pengembangan website
-                      sederhana</a
+    <section id="blog" class="pb-16">
+      <div class="relative flex flex-col">
+        <!-- Section dengan gambar parallax -->
+        <div class="">
+          <div
+            class="w-full h-full flex items-center justify-center pt-20 bg-black bg-opacity-80"
+          >
+            <div class="container">
+              <div class="w-full px-4">
+                <div
+                  class="max-w-xl mx-auto text-center mb-8"
+                  data-aos="fade-down"
+                  data-aos-delay="100"
+                >
+                  <h4 class="font-semibold text-4xl text-dark mb-2">Blog</h4>
+                  <h2 class="font-bold text-primary text-3xl">
+                    Tulisan Terkini
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+              >
+                <div
+                  class="mb-12 p-4 md:w-1/2"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <a href="blog.html">
+                    <div
+                      class="relative rounded-lg shadow-md overflow-hidden bg-dark2 group"
                     >
-                  </h3>
-                  <a
-                    href="blog.html"
-                    class="font-medium text-sm text-dark3 bg-primary py-2 px-4 rounded-lg hover:opacity-80"
-                    >Baca Selengkapnya</a
-                  >
+                      <div class="relative overflow-hidden">
+                        <img
+                          src="src/img/blog1.jpg"
+                          alt="Blog"
+                          class="w-full transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                        />
+                        <div
+                          class="absolute inset-0 bg-gradient-to-t from-black/100 to-transparent"
+                        ></div>
+                      </div>
+
+                      <div class="pb-6 px-4">
+                        <h3
+                          class="font-semibold text-xl text-white mb-3 group-hover:text-dark"
+                        >
+                          Perangkat lunak yang digunakan untuk pengembangan
+                          website sederhana
+                        </h3>
+                        <div
+                          class="inline-block font-medium text-sm text-black bg-white py-2 px-4 rounded-lg hover:opacity-80"
+                        >
+                          Baca Selengkapnya
+                        </div>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -508,22 +556,41 @@
         </div>
       </div>
     </section>
+
+    <!-- blog start -->
+
     <!-- blog end -->
 
     <!-- Footer start -->
-    <footer class="bg-fcolor pt-24 pb-12" id="kontak">
+    <footer class="bg-fcolor pt-20 pb-12" id="kontak">
       <div class="container">
         <div class="flex flex-warp">
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2">
-            <h2 class="font-bold text-4xl text-white mb-5">FRF</h2>
-            <h3 class="font-bold text-2xl mb-2">Hubungi Saya</h3>
-            <p>fadlurrahmanfaiq@gmail.com</p>
+          <div class="w-full px-4 mb-12 text-black font-medium md:w-1/2">
+            <h2
+              class="font-bold text-4xl text-black mb-5"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              FRF
+            </h2>
+            <h3
+              class="font-bold text-xl mb-2"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              Hubungi Saya
+            </h3>
+            <p class="text-sm" data-aos="fade-right" data-aos-delay="500">
+              fadlurrahmanfaiq@gmail.com
+            </p>
             <div class="flex items-center mt-5">
               <!-- Instagram -->
               <a
                 href="http://instagram.com/fadlur.rf"
+                data-aos="fade-up"
+                data-aos-delay="100"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-black text-black transition-transform transform hover:scale-110"
               >
                 <svg
                   role="img"
@@ -542,8 +609,10 @@
               <!-- Linkedin -->
               <a
                 href="https://www.linkedin.com/in/fadlurrf/"
+                data-aos="fade-up"
+                data-aos-delay="400"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-black text-black transition-transform transform hover:scale-110"
               >
                 <svg
                   role="img"
@@ -561,40 +630,45 @@
             </div>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/2">
-            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
-            <ul class="text-slate-300">
-              <li>
+            <h3
+              class="font-semibold text-xl text-black mb-5"
+              data-aos="zoom-in"
+            >
+              Tautan
+            </h3>
+            <ul class="text-black">
+              <li data-aos="zoom-in" data-aos-delay="100">
                 <a
                   href="#"
-                  class="inline-block text-base hover:text-bwhite2 mb-3"
+                  class="inline-block text-base hover:font-semibold mb-3 transition-transform transform hover:scale-105"
                   >Beranda</a
                 >
               </li>
-              <li>
+              <li data-aos="zoom-in" data-aos-delay="300">
                 <a
                   href="#about"
-                  class="inline-block text-base hover:text-bwhite2 mb-3"
+                  class="inline-block text-base hover:font-semibold mb-3 transition-transform transform hover:scale-105"
                   >Tentang Saya</a
                 >
               </li>
-              <li>
+              <li data-aos="zoom-in" data-aos-delay="500">
                 <a
                   href="#portfolio"
-                  class="inline-block text-base hover:text-bwhite2 mb-3"
+                  class="inline-block text-base hover:font-semibold mb-3 transition-transform transform hover:scale-105"
                   >Portfolio</a
                 >
               </li>
-              <li>
+              <li data-aos="zoom-in" data-aos-delay="700">
                 <a
                   href="#blog"
-                  class="inline-block text-base hover:text-bwhite2 mb-3"
+                  class="inline-block text-base hover:font-semibold mb-3 transition-transform transform hover:scale-105"
                   >Blog</a
                 >
               </li>
-              <li>
+              <li data-aos="zoom-in" data-aos-delay="900">
                 <a
                   href="#kontak"
-                  class="inline-block text-base hover:text-bwhite2 mb-3"
+                  class="inline-block text-base hover:font-semibold mb-3 transition-transform transform hover:scale-105"
                   >Kontak</a
                 >
               </li>
@@ -602,16 +676,20 @@
           </div>
         </div>
 
-        <div class="w-full pt-10 border-t border-slate-700">
-          <p class="font-medium text-sm text-bwhite text-center">
+        <div
+          id="footer"
+          class="w-full pt-10 border-t border-slate-700 opacity-0 translate-y-10 transition-all duration-1000"
+        >
+          <p class="font-medium text-sm text-black text-center">
             Dibuat oleh
             <a
               href="http://instagram.com/fadlur.rf"
               target="_blank"
-              class="font-bold text-bwhite2"
-              >Fadlur Rahman Fa'iq</a
+              class="font-bold text-black"
             >
-            2024.
+              Fadlur Rahman Fa'iq
+            </a>
+            2025.
           </p>
         </div>
       </div>
@@ -621,12 +699,19 @@
     <a
       href="#home"
       id="button-top"
-      class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-dark p-4"
+      class="fixed bottom-4 right-4 z-[9999] hidden h-10 w-10 items-center justify-center rounded-full bg-dark pb-1.5 border border-black"
       ><span
-        class="Block h-5 w-5 rotate-45 border-t-2 border-l-2 mt-2 border-primary"
+        class="Block h-2 w-2 rotate-45 border-t-2 border-l-2 mt-2 border-black"
       ></span
     ></a>
 
     <script src="src/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
   </body>
 </html>

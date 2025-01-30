@@ -23,3 +23,22 @@ hambuger.addEventListener('click', function(){
     hambuger.classList.toggle('menu-active');
     navMenu.classList.toggle('hidden');
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const footer = document.getElementById("footer");
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            footer.classList.remove("opacity-0", "translate-y-10");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+  
+    observer.observe(footer);
+  });
+  

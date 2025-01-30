@@ -8,24 +8,31 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#DFD0B8',
-        secondary: '#DFD0B8',
-        dark: '#6EACDA',
-        dark2: '#153448',
+        primary: '#FFFFFF',
+        secondary: '#FFFFFF',
+        dark: '#fba82b',
+        dark2: '#000000',
         dark3: '#010c16',
-        dark5: '#06243f',
-        dark4: '#093255',
+        dark5: '#000000',
+        dark4: '#1D2323',
         porto: '#305874',
-        bwhite: '#e8e9eb',
-        bwhite2: '#eee4cd',
-        fcolor: '#3C5B6F',
+        bwhite: '#ffffff',
+        bwhite2: '#ffffff',
+        fcolor: '#fba82b',
+      },
+      backgroundImage: {
+        'custom': "url('/src/img/citylight.jpg')",
+        'parallax': "url('/src/img/citylight2.jpg')",
       },
       screens:{
         '2xl': '1320px',
       },
       maxHeight: {
         '128': '32rem',
-      }
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [
