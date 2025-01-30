@@ -21,8 +21,8 @@ module.exports = {
         fcolor: '#fba82b',
       },
       backgroundImage: {
-        'custom': "url('/src/img/citylight.jpg')",
-        'parallax': "url('/src/img/citylight2.jpg')",
+        'custom': "url('src/img/citylight.jpg')",
+        'parallax': "url('src/img/citylight2.jpg')",
       },
       screens:{
         '2xl': '1320px',
