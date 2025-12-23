@@ -8,16 +8,16 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#FFFFFF',
-        secondary: '#FFFFFF',
+        primary: '#F5F6F7',
+        secondary: '#F5F6F7',
         dark: '#6E8293',
         dark2: '#000000',
         dark3: '#010c16',
         dark5: '#000000',
         dark4: '#1D2323',
         porto: '#305874',
-        bwhite: '#ffffff',
-        bwhite2: '#ffffff',
+        bwhite: '#F5F6F7',
+        bwhite2: '#F5F6F7',
         fcolor: '#6E8293',
       },
       backgroundImage: {
