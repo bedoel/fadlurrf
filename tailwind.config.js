@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         primary: '#FFFFFF',
         secondary: '#FFFFFF',
-        dark: '#fba82b',
+        dark: '#6E8293',
         dark2: '#000000',
         dark3: '#010c16',
         dark5: '#000000',
@@ -18,7 +18,7 @@ module.exports = {
         porto: '#305874',
         bwhite: '#ffffff',
         bwhite2: '#ffffff',
-        fcolor: '#fba82b',
+        fcolor: '#6E8293',
       },
       backgroundImage: {
         'custom': "url('src/img/citylight.jpg')",
