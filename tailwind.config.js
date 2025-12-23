@@ -21,8 +21,8 @@ module.exports = {
         fcolor: '#6E8293',
       },
       backgroundImage: {
-        'custom': "url('src/img/citylight.jpg')",
-        'parallax': "url('src/img/citylight2.jpg')",
+        'custom': "url('src/img/city2.jpg')",
+        'parallax': "url('src/img/city1.jpg')",
       },
       screens:{
         '2xl': '1320px',
